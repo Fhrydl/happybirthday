@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Sayang 🤍</title>
+
+<!-- Font playful (judul) & font rapi (UI). Times New Roman tidak perlu di-import, sudah tersedia di semua sistem. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- lapisan bunga berjatuhan, hidup terus selama amplop sudah dibuka -->
+  <div id="petal-layer" aria-hidden="true"></div>
+
+  <!-- ===================== SCENE 1 — AMPLOP ===================== -->
+  <main id="scene-envelope" class="scene">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+
+    <p class="hint">ketuk amplopnya ✦</p>
+
+    <button id="envelope" class="envelope" aria-label="Buka amplop">
+      <span class="envelope-shadow"></span>
+      <span class="envelope-back"></span>
+      <span class="envelope-letter-peek"></span>
+      <span class="envelope-flap"></span>
+      <span class="seal">
+        <svg viewBox="0 0 24 24" class="seal-heart"><path d="M12 21s-7.5-4.6-10-9.1C.6 8.9 1.9 5 5.6 4.2 8 3.7 10 5 12 7.4 14 5 16 3.7 18.4 4.2 22.1 5 23.4 8.9 22 11.9 19.5 16.4 12 21 12 21z"/></svg>
+      </span>
+      <span class="envelope-front"></span>
+    </button>
+
+    <p class="from">— untuk kamu, dari aku</p>
+  </main>
+
+  <!-- ===================== SCENE 2 — ISI SURAT ===================== -->
+  <section id="scene-letter" class="scene scene-letter" hidden>
+
+    <header class="title-block">
+      <p class="eyebrow-hand">selamat ulang tahun,</p>
+      <h1 class="title-hand">Sayangku&nbsp;🤍</h1>
+    </header>
+
+    <!-- ======= GANTI FOTO DI SINI =======
+         Ganti nilai "src" pada 5 tag <img> di bawah dengan foto asli kamu.
+         Taruh file fotonya (misal foto1.jpg ... foto5.jpg) satu folder
+         dengan index.html, lalu ganti src="foto-1.svg" -> src="foto1.jpg" dst. -->
+    <div class="gallery">
+      <figure class="polaroid p1"><img src="foto1.jpg" alt="Foto kenangan 1"><figcaption>foto kesukaanku</figcaption></figure>
+      <figure class="polaroid p2"><img src="foto2.jpg" alt="Foto kenangan 2"><figcaption>senyum favoritku</figcaption></figure>
+      <figure class="polaroid p3"><img src="foto3.jpg" alt="Foto kenangan 3"><figcaption>hari itu</figcaption></figure>
+      <figure class="polaroid p4"><img src="foto4.jpg" alt="Foto kenangan 4"><figcaption>bahagia banget</figcaption></figure>
+      <figure class="polaroid p5"><img src="foto5.jpg" alt="Foto kenangan 5"><figcaption>selalu ingin diulang</figcaption></figure>
+    </div>
+
+    <!-- ======= GANTI ISI SURAT DI SINI ======= -->
+    <article class="letter-paper">
+      <p class="salutation">Untuk kamu,</p>
+
+      <p>Selamat ulang tahun, sayang. Hari ini aku cuma mau berhenti sebentar dari segala hal yang biasa kita omongin — kerjaan, rencana besok, drama kecil sehari-hari — dan bilang satu hal yang paling penting: aku bersyukur banget kamu ada, dan aku bersyukur kamu lahir ke dunia ini.</p>
+
+      <p>Aku masih inget gimana rasanya di awal-awal kita kenal. Semua masih canggung, semua masih baru, tapi entah kenapa ngobrol sama kamu nggak pernah kerasa berat. Dari situ aku udah curiga kamu bakal jadi orang yang penting. Ternyata benar, dan bahkan lebih dari yang aku bayangin.</p>
+
+      <p>Beberapa tahun belakangan ini banyak yang berubah. Kita berdua tumbuh, pindah dari satu fase hidup ke fase berikutnya, ketemu masalah baru, ketemu versi diri kita yang baru juga. Tapi satu hal yang nggak berubah — tiap kali ada kabar baik, kamu orang pertama yang mau aku ceritain. Tiap kali capek, aku tahu ke mana harus pulang. Itu bukan hal kecil, dan aku nggak mau nganggep itu biasa aja.</p>
+
+      <p>Aku tahu kita pernah ada di titik yang nggak gampang. Ada hari-hari kita salah paham, ada momen kita sama-sama keras kepala, ada juga waktu-waktu kita capek sama cara kita masing-masing. Tapi tiap kali itu terjadi, kita selalu balik lagi, saling minta maaf, saling belajar dengerin lebih baik. Buat aku, itu yang bikin hubungan ini kerasa nyata — bukan karena nggak pernah ada masalah, tapi karena kita selalu milih buat tetap coba, bareng-bareng.</p>
+
+      <p>Terima kasih udah sabar sama aku di hari-hari aku lagi susah diajak ngomong. Terima kasih udah rayain hal-hal kecil bareng aku, yang kadang orang lain anggap nggak penting. Terima kasih udah percaya sama aku, bahkan di saat aku sendiri ragu sama diriku sendiri. Kamu bikin aku pengen jadi versi yang lebih baik, bukan karena kamu nuntut, tapi karena aku liat kamu berusaha jadi lebih baik juga, tiap hari.</p>
+
+      <p>Di ulang tahun kamu ini, aku cuma pengen kamu tahu — kamu dicintai dengan cara yang paling sederhana dan paling serius sekaligus. Nggak perlu jadi sempurna, nggak perlu selalu kuat. Aku di sini, buat dengerin, buat nemenin, buat bareng-bareng ngadepin apapun yang dateng setelah ini.</p>
+
+      <p>Makasih udah jadi rumah buat aku. Makasih udah jadi kamu. Semoga tahun ini bawa lebih banyak hal yang bikin kamu ketawa lepas, lebih sedikit hal yang bikin kamu capek, dan lebih banyak lagi waktu buat kita berdua.</p>
+
+      <p>Selamat ulang tahun. Aku sayang kamu — hari ini, dan di semua hari sesudahnya.</p>
+
+      <p class="signoff">selalu punyamu,<br><span class="signature">aku</span></p>
+    </article>
+
+    <p class="scroll-hint">↓ lagu ini buat kamu, muter otomatis</p>
+  </section>
+
+  <!-- ===================== POPUP LAGU ===================== -->
+  <div id="music-popup" class="music-popup" hidden>
+    <div class="music-art">
+      <svg viewBox="0 0 24 24" class="note-icon"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+    </div>
+    <div class="music-info">
+      <p class="music-title">One Only</p>
+      <p class="music-artist">Pamungkas</p>
+    </div>
+    <div class="eq" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <button id="music-toggle" class="music-toggle" aria-label="Putar / jeda lagu">
+      <svg id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      <svg id="icon-pause" viewBox="0 0 24 24" hidden><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+    </button>
+  </div>
+
+  <!-- Pemutar lagu lokal (disembunyikan secara visual, tapi tetap memutar audio) -->
+  <div id="spotify-holder" class="spotify-holder">
+    <audio id="local-audio" loop></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
